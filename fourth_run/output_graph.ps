@@ -1,0 +1,1083 @@
+%!PS-Adobe-3.0
+%%Creator: graphviz version 2.38.0 (20140413.2041)
+%%Title: G
+%%Pages: (atend)
+%%BoundingBox: (atend)
+%%EndComments
+save
+%%BeginProlog
+/DotDict 200 dict def
+DotDict begin
+
+/setupLatin1 {
+mark
+/EncodingVector 256 array def
+ EncodingVector 0
+
+ISOLatin1Encoding 0 255 getinterval putinterval
+EncodingVector 45 /hyphen put
+
+% Set up ISO Latin 1 character encoding
+/starnetISO {
+        dup dup findfont dup length dict begin
+        { 1 index /FID ne { def }{ pop pop } ifelse
+        } forall
+        /Encoding EncodingVector def
+        currentdict end definefont
+} def
+/Times-Roman starnetISO def
+/Times-Italic starnetISO def
+/Times-Bold starnetISO def
+/Times-BoldItalic starnetISO def
+/Helvetica starnetISO def
+/Helvetica-Oblique starnetISO def
+/Helvetica-Bold starnetISO def
+/Helvetica-BoldOblique starnetISO def
+/Courier starnetISO def
+/Courier-Oblique starnetISO def
+/Courier-Bold starnetISO def
+/Courier-BoldOblique starnetISO def
+cleartomark
+} bind def
+
+%%BeginResource: procset graphviz 0 0
+/coord-font-family /Times-Roman def
+/default-font-family /Times-Roman def
+/coordfont coord-font-family findfont 8 scalefont def
+
+/InvScaleFactor 1.0 def
+/set_scale {
+       dup 1 exch div /InvScaleFactor exch def
+       scale
+} bind def
+
+% styles
+/solid { [] 0 setdash } bind def
+/dashed { [9 InvScaleFactor mul dup ] 0 setdash } bind def
+/dotted { [1 InvScaleFactor mul 6 InvScaleFactor mul] 0 setdash } bind def
+/invis {/fill {newpath} def /stroke {newpath} def /show {pop newpath} def} bind def
+/bold { 2 setlinewidth } bind def
+/filled { } bind def
+/unfilled { } bind def
+/rounded { } bind def
+/diagonals { } bind def
+/tapered { } bind def
+
+% hooks for setting color 
+/nodecolor { sethsbcolor } bind def
+/edgecolor { sethsbcolor } bind def
+/graphcolor { sethsbcolor } bind def
+/nopcolor {pop pop pop} bind def
+
+/beginpage {	% i j npages
+	/npages exch def
+	/j exch def
+	/i exch def
+	/str 10 string def
+	npages 1 gt {
+		gsave
+			coordfont setfont
+			0 0 moveto
+			(\() show i str cvs show (,) show j str cvs show (\)) show
+		grestore
+	} if
+} bind def
+
+/set_font {
+	findfont exch
+	scalefont setfont
+} def
+
+% draw text fitted to its expected width
+/alignedtext {			% width text
+	/text exch def
+	/width exch def
+	gsave
+		width 0 gt {
+			[] 0 setdash
+			text stringwidth pop width exch sub text length div 0 text ashow
+		} if
+	grestore
+} def
+
+/boxprim {				% xcorner ycorner xsize ysize
+		4 2 roll
+		moveto
+		2 copy
+		exch 0 rlineto
+		0 exch rlineto
+		pop neg 0 rlineto
+		closepath
+} bind def
+
+/ellipse_path {
+	/ry exch def
+	/rx exch def
+	/y exch def
+	/x exch def
+	matrix currentmatrix
+	newpath
+	x y translate
+	rx ry scale
+	0 0 1 0 360 arc
+	setmatrix
+} bind def
+
+/endpage { showpage } bind def
+/showpage { } def
+
+/layercolorseq
+	[	% layer color sequence - darkest to lightest
+		[0 0 0]
+		[.2 .8 .8]
+		[.4 .8 .8]
+		[.6 .8 .8]
+		[.8 .8 .8]
+	]
+def
+
+/layerlen layercolorseq length def
+
+/setlayer {/maxlayer exch def /curlayer exch def
+	layercolorseq curlayer 1 sub layerlen mod get
+	aload pop sethsbcolor
+	/nodecolor {nopcolor} def
+	/edgecolor {nopcolor} def
+	/graphcolor {nopcolor} def
+} bind def
+
+/onlayer { curlayer ne {invis} if } def
+
+/onlayers {
+	/myupper exch def
+	/mylower exch def
+	curlayer mylower lt
+	curlayer myupper gt
+	or
+	{invis} if
+} def
+
+/curlayer 0 def
+
+%%EndResource
+%%EndProlog
+%%BeginSetup
+14 default-font-family set_font
+1 setmiterlimit
+% /arrowlength 10 def
+% /arrowwidth 5 def
+
+% make sure pdfmark is harmless for PS-interpreters other than Distiller
+/pdfmark where {pop} {userdict /pdfmark /cleartomark load put} ifelse
+% make '<<' and '>>' safe on PS Level 1 devices
+/languagelevel where {pop languagelevel}{1} ifelse
+2 lt {
+    userdict (<<) cvn ([) cvn load put
+    userdict (>>) cvn ([) cvn load put
+} if
+
+%%EndSetup
+setupLatin1
+%%Page: 1 1
+%%PageBoundingBox: 36 36 183 612
+%%PageOrientation: Portrait
+0 0 1 beginpage
+gsave
+36 36 147 576 boxprim clip newpath
+0.407932 0.407932 set_scale 0 rotate 92.25 92.25 translate
+% fastq 1
+gsave
+0 0 0 nodecolor
+14 /Times-Roman set_font
+195.33 1309.8 moveto 37.71 (fastq 1) alignedtext
+grestore
+% blastn
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+newpath 265.19 1260 moveto
+211.19 1260 lineto
+211.19 1224 lineto
+265.19 1224 lineto
+closepath stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+221.47 1237.8 moveto 33.44 (blastn) alignedtext
+grestore
+% fastq 1->blastn
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 220.12 1295.7 moveto
+222.8 1287.9 226.02 1278.51 228.99 1269.83 curveto
+stroke
+0 0 0 edgecolor
+newpath 232.39 1270.7 moveto
+232.33 1260.1 lineto
+225.77 1268.43 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 232.39 1270.7 moveto
+232.33 1260.1 lineto
+225.77 1268.43 lineto
+closepath stroke
+grestore
+% collect_hits.py
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+newpath 300.23 1116 moveto
+202.15 1116 lineto
+202.15 1080 lineto
+300.23 1080 lineto
+closepath stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+210.17 1093.8 moveto 82.04 (collect_hits.py) alignedtext
+grestore
+% fastq 1->collect_hits.py
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 205.14 1295.66 moveto
+190.54 1265.15 165.61 1200.51 188.19 1152 curveto
+193.62 1140.34 203.01 1130.34 212.91 1122.26 curveto
+stroke
+0 0 0 edgecolor
+newpath 215.04 1125.03 moveto
+220.89 1116.2 lineto
+210.81 1119.45 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 215.04 1125.03 moveto
+220.89 1116.2 lineto
+210.81 1119.45 lineto
+closepath stroke
+grestore
+% fastq 2
+gsave
+0 0 0 nodecolor
+14 /Times-Roman set_font
+304.33 1309.8 moveto 37.71 (fastq 2) alignedtext
+grestore
+% fastq 2->blastn
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 302.18 1295.7 moveto
+291.48 1286.88 278.3 1276.03 266.7 1266.47 curveto
+stroke
+0 0 0 edgecolor
+newpath 268.91 1263.76 moveto
+258.96 1260.1 lineto
+264.46 1269.16 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 268.91 1263.76 moveto
+258.96 1260.1 lineto
+264.46 1269.16 lineto
+closepath stroke
+grestore
+% fastq 2->collect_hits.py
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 326.45 1295.9 moveto
+331.41 1265.22 337.98 1199.58 314.19 1152 curveto
+308.39 1140.4 298.79 1130.36 288.81 1122.24 curveto
+stroke
+0 0 0 edgecolor
+newpath 290.86 1119.41 moveto
+280.78 1116.14 lineto
+286.63 1124.98 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 290.86 1119.41 moveto
+280.78 1116.14 lineto
+286.63 1124.98 lineto
+closepath stroke
+grestore
+% small fastq 1
+gsave
+0 0 0 nodecolor
+14 /Times-Roman set_font
+273.42 1021.8 moveto 71.54 (small fastq 1) alignedtext
+grestore
+% bwa mem
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+newpath 237.51 972 moveto
+166.87 972 lineto
+166.87 936 lineto
+237.51 936 lineto
+closepath stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+174.78 949.8 moveto 54.82 (bwa mem) alignedtext
+grestore
+% small fastq 1->bwa mem
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 283.02 1007.88 moveto
+269.16 998.81 251.95 987.55 236.98 977.76 curveto
+stroke
+0 0 0 edgecolor
+newpath 238.75 974.74 moveto
+228.47 972.19 lineto
+234.92 980.59 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 238.75 974.74 moveto
+228.47 972.19 lineto
+234.92 980.59 lineto
+closepath stroke
+grestore
+% small fastq 2
+gsave
+0 0 0 nodecolor
+14 /Times-Roman set_font
+167.42 1021.8 moveto 71.54 (small fastq 2) alignedtext
+grestore
+% small fastq 2->bwa mem
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 202.94 1007.7 moveto
+202.83 999.98 202.7 990.71 202.58 982.11 curveto
+stroke
+0 0 0 edgecolor
+newpath 206.08 982.05 moveto
+202.44 972.1 lineto
+199.08 982.15 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 206.08 982.05 moveto
+202.44 972.1 lineto
+199.08 982.15 lineto
+closepath stroke
+grestore
+% fasta reference
+gsave
+0 0 0 nodecolor
+14 /Times-Roman set_font
+61.2 1309.8 moveto 81.98 (fasta reference) alignedtext
+grestore
+% fasta reference->blastn
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 135.46 1295.88 moveto
+155.51 1285.56 181.06 1272.4 201.67 1261.8 curveto
+stroke
+0 0 0 edgecolor
+newpath 203.46 1264.81 moveto
+210.75 1257.12 lineto
+200.26 1258.59 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 203.46 1264.81 moveto
+210.75 1257.12 lineto
+200.26 1258.59 lineto
+closepath stroke
+grestore
+% fasta reference->bwa mem
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 108.06 1295.74 moveto
+116.53 1269.25 131.19 1216.79 131.19 1171 curveto
+131.19 1171 131.19 1171 131.19 1097 curveto
+131.19 1056.55 131.05 1043.63 150.19 1008 curveto
+155.9 997.37 164.39 987.43 172.85 979.1 curveto
+stroke
+0 0 0 edgecolor
+newpath 175.31 981.6 moveto
+180.22 972.21 lineto
+170.53 976.48 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 175.31 981.6 moveto
+180.22 972.21 lineto
+170.53 976.48 lineto
+closepath stroke
+grestore
+% samtools mpileup
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+newpath 214.85 612 moveto
+99.53 612 lineto
+99.53 576 lineto
+214.85 576 lineto
+closepath stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+107.61 589.8 moveto 99.16 (samtools mpileup) alignedtext
+grestore
+% fasta reference->samtools mpileup
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 100.41 1295.97 moveto
+97.79 1269.34 93.19 1216.21 93.19 1171 curveto
+93.19 1171 93.19 1171 93.19 737 curveto
+93.19 693.08 118.95 647.73 137.79 620.44 curveto
+stroke
+0 0 0 edgecolor
+newpath 140.68 622.42 moveto
+143.62 612.24 lineto
+134.97 618.37 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 140.68 622.42 moveto
+143.62 612.24 lineto
+134.97 618.37 lineto
+closepath stroke
+grestore
+% bcftools consensus
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+newpath 192.07 108 moveto
+70.31 108 lineto
+70.31 72 lineto
+192.07 72 lineto
+closepath stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+78.5 85.8 moveto 105.38 (bcftools consensus) alignedtext
+grestore
+% fasta reference->bcftools consensus
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 92.45 1295.68 moveto
+78.69 1269.53 55.19 1218 55.19 1171 curveto
+55.19 1171 55.19 1171 55.19 233 curveto
+55.19 187.64 85.71 142.75 108.07 115.95 curveto
+stroke
+0 0 0 edgecolor
+newpath 110.84 118.09 moveto
+114.7 108.23 lineto
+105.53 113.53 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 110.84 118.09 moveto
+114.7 108.23 lineto
+105.53 113.53 lineto
+closepath stroke
+grestore
+% tsv blastn output
+gsave
+0 0 0 nodecolor
+14 /Times-Roman set_font
+204.91 1165.8 moveto 92.56 (tsv blastn output) alignedtext
+grestore
+% tsv blastn output->collect_hits.py
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 251.19 1151.7 moveto
+251.19 1143.98 251.19 1134.71 251.19 1126.11 curveto
+stroke
+0 0 0 edgecolor
+newpath 254.69 1126.1 moveto
+251.19 1116.1 lineto
+247.69 1126.1 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 254.69 1126.1 moveto
+251.19 1116.1 lineto
+247.69 1126.1 lineto
+closepath stroke
+grestore
+% bam file
+gsave
+0 0 0 nodecolor
+14 /Times-Roman set_font
+150.44 661.8 moveto 45.49 (bam file) alignedtext
+grestore
+% bam file->samtools mpileup
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 169.24 647.7 moveto
+167.47 639.98 165.35 630.71 163.39 622.11 curveto
+stroke
+0 0 0 edgecolor
+newpath 166.74 621.07 moveto
+161.1 612.1 lineto
+159.92 622.63 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 166.74 621.07 moveto
+161.1 612.1 lineto
+159.92 622.63 lineto
+closepath stroke
+grestore
+% vcf file
+gsave
+0 0 0 nodecolor
+14 /Times-Roman set_font
+162.56 373.8 moveto 39.27 (vcf file) alignedtext
+grestore
+% bcftools filter
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+newpath 177.74 324 moveto
+86.65 324 lineto
+86.65 288 lineto
+177.74 288 lineto
+closepath stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+94.67 301.8 moveto 75.04 (bcftools filter) alignedtext
+grestore
+% vcf file->bcftools filter
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 169.83 359.7 moveto
+163.96 351.47 156.82 341.48 150.35 332.42 curveto
+stroke
+0 0 0 edgecolor
+newpath 153.07 330.21 moveto
+144.41 324.1 lineto
+147.37 334.28 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 153.07 330.21 moveto
+144.41 324.1 lineto
+147.37 334.28 lineto
+closepath stroke
+grestore
+% vcf file->bcftools consensus
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 185.95 359.86 moveto
+193.84 319.82 208.7 217.9 174.19 144 curveto
+169.48 133.91 162.43 124.09 155.4 115.69 curveto
+stroke
+0 0 0 edgecolor
+newpath 157.97 113.32 moveto
+148.74 108.12 lineto
+152.72 117.94 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 157.97 113.32 moveto
+148.74 108.12 lineto
+152.72 117.94 lineto
+closepath stroke
+grestore
+% consensus file
+gsave
+0 0 0 nodecolor
+14 /Times-Roman set_font
+92.11 13.8 moveto 78.16 (consensus file) alignedtext
+grestore
+% depth file
+gsave
+0 0 0 nodecolor
+14 /Times-Roman set_font
+104.94 157.8 moveto 52.49 (depth file) alignedtext
+grestore
+% depth file->bcftools consensus
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 131.19 143.7 moveto
+131.19 135.98 131.19 126.71 131.19 118.11 curveto
+stroke
+0 0 0 edgecolor
+newpath 134.69 118.1 moveto
+131.19 108.1 lineto
+127.69 118.1 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 134.69 118.1 moveto
+131.19 108.1 lineto
+127.69 118.1 lineto
+closepath stroke
+grestore
+% blastn->tsv blastn output
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 241.4 1223.7 moveto
+242.84 1215.98 244.56 1206.71 246.16 1198.11 curveto
+stroke
+0 0 0 edgecolor
+newpath 249.63 1198.58 moveto
+248.01 1188.1 lineto
+242.75 1197.3 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 249.63 1198.58 moveto
+248.01 1188.1 lineto
+242.75 1197.3 lineto
+closepath stroke
+grestore
+% collect_hits.py->small fastq 1
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 265.53 1079.7 moveto
+272.48 1071.3 280.96 1061.07 288.59 1051.86 curveto
+stroke
+0 0 0 edgecolor
+newpath 291.33 1054.04 moveto
+295.02 1044.1 lineto
+285.94 1049.57 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 291.33 1054.04 moveto
+295.02 1044.1 lineto
+285.94 1049.57 lineto
+closepath stroke
+grestore
+% collect_hits.py->small fastq 2
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 239.33 1079.7 moveto
+233.69 1071.47 226.84 1061.48 220.62 1052.42 curveto
+stroke
+0 0 0 edgecolor
+newpath 223.46 1050.37 moveto
+214.92 1044.1 lineto
+217.69 1054.33 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 223.46 1050.37 moveto
+214.92 1044.1 lineto
+217.69 1054.33 lineto
+closepath stroke
+grestore
+% samtools view
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+newpath 245.69 900 moveto
+148.7 900 lineto
+148.7 864 lineto
+245.69 864 lineto
+closepath stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+156.94 877.8 moveto 80.49 (samtools view) alignedtext
+grestore
+% bwa mem->samtools view
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 200.96 935.7 moveto
+200.4 927.98 199.74 918.71 199.13 910.11 curveto
+stroke
+0 0 0 edgecolor
+newpath 202.62 909.83 moveto
+198.41 900.1 lineto
+195.63 910.33 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 202.62 909.83 moveto
+198.41 900.1 lineto
+195.63 910.33 lineto
+closepath stroke
+grestore
+% novosort
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+newpath 227.69 828 moveto
+162.69 828 lineto
+162.69 792 lineto
+227.69 792 lineto
+closepath stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+170.69 805.8 moveto 49 (novosort) alignedtext
+grestore
+% samtools view->novosort
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 196.7 863.7 moveto
+196.48 855.98 196.21 846.71 195.97 838.11 curveto
+stroke
+0 0 0 edgecolor
+newpath 199.46 838 moveto
+195.68 828.1 lineto
+192.47 838.2 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 199.46 838 moveto
+195.68 828.1 lineto
+192.47 838.2 lineto
+closepath stroke
+grestore
+% picard MarkDuplicates
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+newpath 266.36 756 moveto
+122.02 756 lineto
+122.02 720 lineto
+266.36 720 lineto
+closepath stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+129.85 733.8 moveto 128.67 (picard MarkDuplicates) alignedtext
+grestore
+% novosort->picard MarkDuplicates
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 194.94 791.7 moveto
+194.83 783.98 194.7 774.71 194.58 766.11 curveto
+stroke
+0 0 0 edgecolor
+newpath 198.08 766.05 moveto
+194.44 756.1 lineto
+191.08 766.15 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 198.08 766.05 moveto
+194.44 756.1 lineto
+191.08 766.15 lineto
+closepath stroke
+grestore
+% picard MarkDuplicates->bam file
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 189 719.7 moveto
+186.66 711.9 183.84 702.51 181.24 693.83 curveto
+stroke
+0 0 0 edgecolor
+newpath 184.55 692.68 moveto
+178.32 684.1 lineto
+177.84 694.69 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 184.55 692.68 moveto
+178.32 684.1 lineto
+177.84 694.69 lineto
+closepath stroke
+grestore
+% samtools index
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+newpath 100.57 1404 moveto
+-.19 1404 lineto
+-.19 1368 lineto
+100.57 1368 lineto
+closepath stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+8 1381.8 moveto 84.38 (samtools index) alignedtext
+grestore
+% samtools index->fasta reference
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 63.05 1367.7 moveto
+69.22 1359.39 76.73 1349.28 83.52 1340.14 curveto
+stroke
+0 0 0 edgecolor
+newpath 86.33 1342.22 moveto
+89.49 1332.1 lineto
+80.71 1338.04 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 86.33 1342.22 moveto
+89.49 1332.1 lineto
+80.71 1338.04 lineto
+closepath stroke
+grestore
+% bwa index
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+newpath 192.12 1404 moveto
+118.26 1404 lineto
+118.26 1368 lineto
+192.12 1368 lineto
+closepath stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+126.23 1381.8 moveto 57.93 (bwa index) alignedtext
+grestore
+% bwa index->fasta reference
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 142.09 1367.7 moveto
+135.8 1359.39 128.14 1349.28 121.23 1340.14 curveto
+stroke
+0 0 0 edgecolor
+newpath 123.97 1337.96 moveto
+115.14 1332.1 lineto
+118.39 1342.19 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 123.97 1337.96 moveto
+115.14 1332.1 lineto
+118.39 1342.19 lineto
+closepath stroke
+grestore
+% bcftools call
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+newpath 199.5 540 moveto
+114.88 540 lineto
+114.88 504 lineto
+199.5 504 lineto
+closepath stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+122.79 517.8 moveto 68.81 (bcftools call) alignedtext
+grestore
+% samtools mpileup->bcftools call
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 157.19 575.7 moveto
+157.19 567.98 157.19 558.71 157.19 550.11 curveto
+stroke
+0 0 0 edgecolor
+newpath 160.69 550.1 moveto
+157.19 540.1 lineto
+153.69 550.1 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 160.69 550.1 moveto
+157.19 540.1 lineto
+153.69 550.1 lineto
+closepath stroke
+grestore
+% bgzip
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+newpath 184.19 468 moveto
+130.19 468 lineto
+130.19 432 lineto
+184.19 432 lineto
+closepath stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+141.64 445.8 moveto 31.1 (bgzip) alignedtext
+grestore
+% bcftools call->bgzip
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 157.19 503.7 moveto
+157.19 495.98 157.19 486.71 157.19 478.11 curveto
+stroke
+0 0 0 edgecolor
+newpath 160.69 478.1 moveto
+157.19 468.1 lineto
+153.69 478.1 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 160.69 478.1 moveto
+157.19 468.1 lineto
+153.69 478.1 lineto
+closepath stroke
+grestore
+% bgzip->vcf file
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 163.37 431.7 moveto
+166.19 423.81 169.58 414.3 172.71 405.55 curveto
+stroke
+0 0 0 edgecolor
+newpath 176.02 406.7 moveto
+176.08 396.1 lineto
+169.42 404.34 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 176.02 406.7 moveto
+176.08 396.1 lineto
+169.42 404.34 lineto
+closepath stroke
+grestore
+% tabix index
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+newpath 280.29 468 moveto
+202.09 468 lineto
+202.09 432 lineto
+280.29 432 lineto
+closepath stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+209.89 445.8 moveto 62.6 (tabix index) alignedtext
+grestore
+% tabix index->vcf file
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 226.61 431.7 moveto
+219.53 423.3 210.91 413.07 203.15 403.86 curveto
+stroke
+0 0 0 edgecolor
+newpath 205.73 401.49 moveto
+196.61 396.1 lineto
+200.38 406.01 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 205.73 401.49 moveto
+196.61 396.1 lineto
+200.38 406.01 lineto
+closepath stroke
+grestore
+% bcftools query
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+newpath 179.67 252 moveto
+82.71 252 lineto
+82.71 216 lineto
+179.67 216 lineto
+closepath stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+90.95 229.8 moveto 80.48 (bcftools query) alignedtext
+grestore
+% bcftools filter->bcftools query
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 131.94 287.7 moveto
+131.83 279.98 131.7 270.71 131.58 262.11 curveto
+stroke
+0 0 0 edgecolor
+newpath 135.08 262.05 moveto
+131.44 252.1 lineto
+128.08 262.15 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 135.08 262.05 moveto
+131.44 252.1 lineto
+128.08 262.15 lineto
+closepath stroke
+grestore
+% bcftools query->depth file
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 131.19 215.7 moveto
+131.19 207.98 131.19 198.71 131.19 190.11 curveto
+stroke
+0 0 0 edgecolor
+newpath 134.69 190.1 moveto
+131.19 180.1 lineto
+127.69 190.1 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 134.69 190.1 moveto
+131.19 180.1 lineto
+127.69 190.1 lineto
+closepath stroke
+grestore
+% bcftools consensus->consensus file
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 131.19 71.7 moveto
+131.19 63.98 131.19 54.71 131.19 46.11 curveto
+stroke
+0 0 0 edgecolor
+newpath 134.69 46.1 moveto
+131.19 36.1 lineto
+127.69 46.1 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 134.69 46.1 moveto
+131.19 36.1 lineto
+127.69 46.1 lineto
+closepath stroke
+grestore
+endpage
+showpage
+grestore
+%%PageTrailer
+%%EndPage: 1
+%%Trailer
+%%Pages: 1
+%%BoundingBox: 36 36 183 612
+end
+restore
+%%EOF

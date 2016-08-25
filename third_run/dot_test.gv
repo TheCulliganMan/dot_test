@@ -1,0 +1,10 @@
+digraph g{
+  node [shape = record, height=0.1];
+  node0 [label = "<f0> |<f1> G|<f2> "];
+  node1 [label = "<f0> |<f1> E|<f2> | <f3> H"];
+  struct3 [shape=record,label="hello\nworld |{ b |{c|<here> d|e}| f}|<there> g | h"];
+  "node0":f1 -> "node1":f3;
+  "node1":f3 -> "node0":f1;
+  "node0":f1 -> "struct3":here;
+  "node1":f1 -> "struct3":there;
+}
