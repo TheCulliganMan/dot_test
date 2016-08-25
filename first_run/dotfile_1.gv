@@ -1,0 +1,10 @@
+digraph G {
+	main -> parse -> execute;
+	main -> init;
+	main -> cleanup;
+	execute -> print_string;
+	execute -> printf;
+	init -> print_string;
+	main -> printf;
+	execute -> compare;
+}
