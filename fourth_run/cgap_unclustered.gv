@@ -1,6 +1,6 @@
 digraph G {
 
-  size = "4, 8";
+  size = "8, 16";
 
   "fastq 1" [shape=none];
   "fastq 2" [shape=none];
