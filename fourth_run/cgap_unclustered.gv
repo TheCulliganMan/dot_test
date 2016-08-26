@@ -1,0 +1,81 @@
+digraph G {
+
+  size = "4, 8";
+
+  "fastq 1" [shape=none];
+  "fastq 2" [shape=none];
+  "small fastq 1" [shape=none];
+  "small fastq 2" [shape=none];
+  "fasta reference" [shape=none];
+  "tsv blastn output" [shape=none];
+  "bam file" [shape=none];
+  "vcf file" [shape=none];
+  "consensus file" [shape=none];
+  "depth file" [shape=none];
+  "blastn" [shape=box];
+  "collect_hits.py" [shape=box];
+  "bwa mem" [shape=box];
+  "samtools view" [shape=box];
+  "novosort" [shape=box];
+  "picard MarkDuplicates" [shape=box];
+  "samtools index" [shape=box];
+  "bwa index" [shape=box];
+  "samtools mpileup" [shape=box];
+  "bcftools call" [shape=box];
+  "bgzip" [shape=box];
+  "tabix index" [shape=box];
+  "formatblastdb" [shape=box];
+  "bcftools filter" [shape=box];
+  "bcftools query" [shape=box];
+  "bcftools consensus" [shape=box];
+
+  "samtools index" -> "fasta reference";
+  "bwa index" -> "fasta reference";
+
+  "formatblastdb" -> "fastq 2"
+  "formatblastdb" -> "fastq 1"
+
+  "fastq 2" -> "blastn";
+  "fastq 1" -> "blastn";
+  "fasta reference" -> "blastn";
+
+  "blastn" -> "tsv blastn output";
+
+  "fastq 1" -> "collect_hits.py";
+  "fastq 2" -> "collect_hits.py";
+  "tsv blastn output" -> "collect_hits.py";
+
+  "collect_hits.py" -> "small fastq 2";
+  "collect_hits.py" -> "small fastq 1";
+
+  "small fastq 1" -> "bwa mem";
+  "small fastq 2" -> "bwa mem";
+  "fasta reference" -> "bwa mem";
+
+  "bwa mem" -> "samtools view";
+  "samtools view" -> "novosort";
+  "novosort" -> "picard MarkDuplicates";
+  "picard MarkDuplicates" -> "bam file";
+
+  "bam file" -> "samtools mpileup";
+  "fasta reference" -> "samtools mpileup";
+
+  "samtools mpileup" -> "bcftools call";
+
+  "bcftools call" -> "bgzip";
+
+  "bgzip" -> "vcf file";
+
+  "tabix index" -> "vcf file";
+
+  "vcf file" -> "bcftools filter";
+  "bcftools filter" -> "bcftools query";
+  "bcftools query" -> "depth file";
+
+  "vcf file" -> "bcftools consensus";
+  "depth file" -> "bcftools consensus";
+  "fasta reference" -> "bcftools consensus";
+
+  "bcftools consensus" -> "consensus file";
+
+}
